@@ -1,0 +1,12 @@
+{
+  "name": "grayboard",
+  "version": "0.0.0",
+  "description": "the gray area between a whiteboard and a computer program",
+  "main": "app/entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "watchify app/entry.js -o dist/bundle.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
