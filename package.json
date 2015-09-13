@@ -5,8 +5,12 @@
   "main": "app/entry.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "watchify app/entry.js -o dist/bundle.js"
+    "build-dev": "watchify app/entry.js -o dist/bundle.js",
+    "build-production": "browserify app/entry.js -o dist/bundle.js && html-inline dist/index.html -o app.html"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
 }
